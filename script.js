@@ -4,12 +4,14 @@ const loadApp = () => {
   const fetchUsers = async () => {
     try {
       const users = await fetch('http://localhost:8000/users');
-      return users;
+      const fetchedUsers = await users.json();
+      return fetchedUsers;
     } catch (error) {
       console.error(error);
     }
   }
-  console.log(fetchUsers());
+  const users = fetchUsers();
+  console.log(users);
 }
 
 loadApp();
