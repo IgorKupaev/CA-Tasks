@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: arial;
+  user-select: none;
+}
+h2 {
+  text-align: center;
+}
+.notesContainer {
+  margin: 0 auto;
+  width: 500px;
+}
+.createForm {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+.createForm input {
+  padding: 5px 15px;
+}
+.createForm button {
+  padding: 5px 10px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+.createForm button:hover {
+  background-color: rgba(196, 196, 196, 0.242);
+}
+.createForm >* {
+  width: 300px;
+  margin: 0 auto;
+}
+.note {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(6, 99, 180, 0.583);
+  margin: 5px;
+  border: 1px solid teal;
+  padding: 5px 15px;
+}
+.noteButtonRemove {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(220, 20, 60, 0.617);
+  color: #fff;
+  font-weight: bold;
+  padding: 5px;
+  transition: all .2s ease;
+}
+.noteButtonRemove:hover {
+  background-color: rgba(220, 20, 60, 1);
+}
+.noteButtonEdit {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(196, 205, 14, 0.954);
+  color: #fff;
+  font-weight: bold;
+  padding: 5px;
+  margin-right: 7px;
+  transition: all .2s ease;
+}
+.noteButtonEdit:hover {
+  background-color: rgba(255, 255, 0, 0.9);
+  color: rgba(6, 99, 180, 0.583);
+}
+.noteBody {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+.modalContainer {
+  background-color: #fff;
+  padding: 15px;
+}
