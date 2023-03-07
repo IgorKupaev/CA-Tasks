@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Validate Form</title>
+</head>
+<body>
+  <div class="form">
+    <div class="formInputs">
+      <div class="errorContainer">
+        <input id="firstName" type="text" placeholder="Имя">
+        <div class="error" id="firstNameError"></div>
+      </div>
+      <div class="errorContainer">
+        <input id="secondName" type="text" placeholder="Фамилия">
+        <div class="error" id="secondNameError"></div>
+      </div>
+      <div class="errorContainer">
+        <input id="email" type="text" placeholder="Email">
+        <div class="error" id="emailError"></div>
+      </div>
+      <div class="errorContainer">
+        <input id="number" type="text" placeholder="Телефон">
+        <div class="error" id="numberError"></div>
+      </div>
+    </div>
+    <button id="button">Отправить</button>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
