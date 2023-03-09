@@ -7,7 +7,6 @@ const error = document.getElementById('error');
 let user = null;
 
 const changePage = () => {
-  console.log(root);
   if (user) {
     root.innerHTML = `<div style='text-align: center'>User ID: ${user._id}</div>
     <div style='text-align: center'>FullName: ${user.fullName}</div>
@@ -33,13 +32,11 @@ const auth = async () => {
       },
       body: JSON.stringify({ login: loginInput.value, password: passwordInput.value})
     });
-    console.log(response);
     if (!response.ok) throw Error(response.statusText)
     const fetchedData = await response.json();
     user = fetchedData;
     changePage();
   } catch (error) {
-    console.log(error);
     showError(error);
   }
 }
