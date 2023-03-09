@@ -45,7 +45,7 @@ const loadApp = () => {
       const users = await fetch('http://localhost:8000/users');
       fetchedUsers = await users.json();
     } catch (error) {
-      console.warn(error);
+      console.error(error);
     }
   }
   fetchUsers().then(() => render());
