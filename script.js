@@ -4,7 +4,6 @@ const crosses = [...document.getElementsByClassName('cross')];
 let target = null;
 
 const close = () => {
-  console.log(target.className);
   target.className = 'img';
 }
 
